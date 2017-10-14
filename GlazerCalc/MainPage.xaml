@@ -7,7 +7,32 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="40">
+        <StackPanel Orientation="Vertical" Padding="10">
+            <TextBlock TextWrapping="Wrap" Text="GlazerCalc v2.0" FontSize="48"/>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <TextBlock Text="Color:" FontSize="24" Margin="10,10,40,10"/>
+                <RadioButton x:Name="WinColor_Black_Radio" Content="Black" GroupName="WindowColor"/>
+                <RadioButton x:Name="WinColor_Brown_Radio" Content="Brown" GroupName="WindowColor" />
+                <RadioButton x:Name="WinColor_Blue_Radio" Content="Blue" GroupName="WindowColor" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical" Padding="10">
+                    <TextBlock Text="Window Height:" FontSize="24" Height="44"/>
+                    <TextBlock Text="Window Width:" FontSize="24" Height="44"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Padding="10">
+                    <TextBox x:Name="Height_TextBox" Text="" FontSize="24" PlaceholderText="Window Height in inches" KeyDown="Height_TextBox_KeyDown" TextChanged="Height_TextBox_TextChanged" />
+                    <TextBox x:Name="Width_TextBox" Text="" FontSize="24" PlaceholderText="Window Width in inches" KeyDown="Width_TextBox_KeyDown" TextChanged="Width_TextBox_TextChanged" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Padding="10">
+                <Slider x:Name="Quantity_Slider" Maximum="10" TickFrequency="1" MinWidth="800" LargeChange="2" FontSize="24" Header="Quantity" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Padding="10">
+                <Button x:Name="Results_Button" Content="View Calculation Results" FontSize="36" Click="Results_Button_Click"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Page>
+    
