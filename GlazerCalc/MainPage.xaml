@@ -22,8 +22,8 @@
                     <TextBlock Text="Window Width:" FontSize="24" Height="44"/>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Padding="10">
-                    <TextBox x:Name="Height_TextBox" Text="" FontSize="24" PlaceholderText="Window Height in inches" KeyDown="Height_TextBox_KeyDown" TextChanged="Height_TextBox_TextChanged" />
-                    <TextBox x:Name="Width_TextBox" Text="" FontSize="24" PlaceholderText="Window Width in inches" KeyDown="Width_TextBox_KeyDown" TextChanged="Width_TextBox_TextChanged" />
+                    <TextBox x:Name="Height_TextBox" Text="" FontSize="24" PlaceholderText="Window Height in meters" KeyDown="Height_TextBox_KeyDown" TextChanged="Height_TextBox_TextChanged" />
+                    <TextBox x:Name="Width_TextBox" Text="" FontSize="24" PlaceholderText="Window Width in meters" KeyDown="Width_TextBox_KeyDown" TextChanged="Width_TextBox_TextChanged" />
                 </StackPanel>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Padding="10">

@@ -13,8 +13,8 @@ namespace GlazerCalc
         public double Quantity { get; set; }
         public string Color { get; set; }
 
-        public double WoodLength { get { return (Height * Width) * 3.25; } }
-        public double GlassArea { get { return Height * Width; } }
+        public double WoodLength { get { return ( Quantity * (2 * (Height + Width) * 3.25)); } }
+        public double GlassArea { get { return ( Quantity * (2 * (Height * Width))); } }
         public DateTime DateOrdered { get; set; }       
     }
 }

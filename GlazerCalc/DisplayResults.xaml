@@ -7,12 +7,48 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="40">
-        <StackPanel Orientation="Vertical" Padding="10">
-            <TextBlock TextWrapping="Wrap" Text="GlazerCalc v2.0" FontSize="48"/>
-        </StackPanel>
-        <StackPanel Orientation="Horizontal" Padding="10">
-            <Button x:Name="ReturnToMain_Button" Content="Enter a New Calculation" FontSize="36" Click="ReturnToMain_Button_Click"/>
-        </StackPanel>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="40" Loading="Grid_Loading">
+
+        
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".8*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+                
+            <TextBlock TextWrapping="Wrap" Text="GlazerCalc v2.0" FontSize="48" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"/>
+            <TextBlock Text="Height" FontSize="28" Grid.Column="0" Grid.Row="2"/>
+            <TextBlock FontSize="28" Name="Height" Grid.Column="1" Grid.Row="2"/>
+            <TextBlock Text="Width" FontSize="28" Grid.Column="0" Grid.Row="3"/>
+            <TextBlock FontSize="28" Name="Width" Grid.Column="1" Grid.Row="3"/>
+            <TextBlock Text="Quantity" FontSize="28" Grid.Column="0" Grid.Row="4"/>
+            <TextBlock FontSize="28" Name="Quantity" Grid.Column="1" Grid.Row="4"/>
+            <TextBlock Text="Window Color" FontSize="28" Grid.Column="0" Grid.Row="5"/>
+            <TextBlock FontSize="28" Name ="WindowColor" Grid.Column="1" Grid.Row="5"/>
+            <TextBlock Text="Wood Length" FontSize="28" Grid.Column="0" Grid.Row="6"/>
+            <TextBlock FontSize="28" Name="WoodLength" Grid.Column="1" Grid.Row="6"/>
+            <TextBlock Text="Glass Area" FontSize="28" Grid.Column="0" Grid.Row="7"/>
+            <TextBlock FontSize="28" Name="GlassArea" Grid.Column="1" Grid.Row="7"/>
+            <TextBlock Text="Date Ordered" FontSize="28" Grid.Column="0" Grid.Row="8"/>
+            <TextBlock FontSize="28" Name="OrderDate" Grid.Column="1" Grid.Row="8"/>
+                
+            <Button x:Name="ReturnToMain_Button" Content="Enter a New Calculation" FontSize="30" Click="ReturnToMain_Button_Click" Grid.Column="0" Grid.Row="10"/>
+
+        </Grid>
+        
+
     </Grid>
 </Page>

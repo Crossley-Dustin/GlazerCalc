@@ -25,10 +25,10 @@ namespace GlazerCalc
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private static double MIN_HEIGHT = .75;
-        private static double MAX_HEIGHT = 3;
-        private static double MIN_WIDTH = .5;
-        private static double MAX_WIDTH = 5;
+        private static double MIN_HEIGHT = 0.75;
+        private static double MAX_HEIGHT = 3.0;
+        private static double MIN_WIDTH = 0.5;
+        private static double MAX_WIDTH = 5.0;
 
         public MainPage()
         {

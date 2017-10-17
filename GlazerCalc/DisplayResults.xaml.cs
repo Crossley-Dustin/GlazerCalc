@@ -41,5 +41,16 @@ namespace GlazerCalc
             // Navigate back to the main page.
             this.Frame.Navigate(typeof(MainPage));
         }
+
+        private void Grid_Loading(FrameworkElement sender, object args)
+        {
+            Height.Text = _window.Height.ToString() + " meters";
+            Width.Text = _window.Width.ToString() + " meters";
+            Quantity.Text = _window.Quantity.ToString() + " windows";
+            WindowColor.Text = _window.Color;
+            WoodLength.Text = _window.WoodLength.ToString() + " feet";
+            GlassArea.Text = _window.GlassArea.ToString() + " square meters";
+            OrderDate.Text = _window.DateOrdered.ToString();
+        }
     }
 }
